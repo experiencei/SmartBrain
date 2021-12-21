@@ -193,3 +193,23 @@ function mergeSortedArray (array1 , array2) {
 
 mergeSortedArray([1,2,5 ,6 ,8], [1,2,3,4,5,6,])
 
+
+
+function reverseString (str) {
+ return str.split("").reverse().join("");
+}
+
+reverseString("my name is Ibrahim")
+
+function reverseString2 (str) {
+ const strLength = str.length-1;
+ const reverseArr = [];
+
+  for (let i = strLength; i >= 0; i--) {
+     reverseArr.push(str[i])
+  }
+
+return reverseArr.join("")
+}
+
+reverseString2("my name is Ibrahim")
