@@ -228,3 +228,17 @@ function firstRecurLetter (input) {
 }
 
 [1 , 3 , 4 , 8,  5 , 6 , 7 , 8 , 9 ,]
+
+function firstRecurLetter2 (input) {
+  let map = {};
+
+  for (let i = 0; i < input.length; i++) {
+   if (map[input[i]] !== undefined) {
+     return map[input[i]]
+   } else {
+     map[input[i]] = i
+   }
+  }
+
+  return undefined;
+}
