@@ -234,7 +234,7 @@ function firstRecurLetter2 (input) {
 
   for (let i = 0; i < input.length; i++) {
    if (map[input[i]] !== undefined) {
-     return map[input[i]]
+     return input[i]
    } else {
      map[input[i]] = i
    }
