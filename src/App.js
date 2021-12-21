@@ -147,3 +147,20 @@ class App extends Component {
 }
 
 export default App;
+
+
+
+function checkBoolean (array1 , array2)  {
+  return array1.some( arr1 => array2.includes(arr1))
+}
+
+function checkBoolean2 (array1 , array2) {
+  for (let i = 0; i < array1.length; i++) {
+      for (let j = 0; j < array.length; j++) {
+        if (array[i]===array2[j]) {
+          return true
+        }
+      }
+  }
+  return false
+}
